@@ -1,0 +1,14 @@
+<h1>Questions</h1>
+<p>Ask your Coach anything you want:</p>
+
+<form action="/answer" method="get">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <div class="wrap">
+    <div class="search">
+      <input type="text" class="searchTerm" name="question" placeholder="Question?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search">Submit</i>
+      </button>
+    </div>
+  </div>
+</form>
